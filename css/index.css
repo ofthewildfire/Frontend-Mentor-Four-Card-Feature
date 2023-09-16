@@ -37,7 +37,7 @@
 .main-heading .main-heading__title .title-paragraph {
   font-family: "Poppins-200";
   padding: 1em 0;
-  font-size: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+  font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
   line-height: 1.5;
   max-width: 31.25rem;
   margin: 0 auto;
@@ -83,7 +83,7 @@
 .grid-container .grid-item .card_text-container > .card_text {
   color: #6f7177;
   font-family: "Poppins-200";
-  font-size: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+  font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
 }
 .grid-container .karma {
   border-top: #fcaf4a 5px solid;
