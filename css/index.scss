@@ -14,5 +14,9 @@ body {
 	font-family: $Font400;
 	max-width: 1440px;
 	background-color: $Very-Light-Gray;
-	margin: 0 auto;
+	margin: 1em auto;
+}
+
+@media screen and (min-width: 60rem) {
+	//
 }

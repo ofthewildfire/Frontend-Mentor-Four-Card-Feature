@@ -5,7 +5,7 @@
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(auto-fit, 1fr);
 	gap: 20px;
-	padding: 1em;
+	padding: 0 1em;
 
 	.grid-item {
 		border-radius: 10px;
@@ -22,6 +22,7 @@
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
+			// margin: 1em 0.5em;
 			// all the sanity in me.
 		}
 
@@ -30,9 +31,7 @@
 			& > .card_title {
 				font-family: $Font600;
 				color: $Very-Dark-Blue;
-				// font-size: clamp(0.9375rem, 0.6339rem + 1.5179vw, 2rem);
-				// font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
-				font-size: clamp(1.125rem, 1.0714rem + 0.2679vw, 1.3125rem);
+				font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
 				margin-bottom: 0.5em;
 			}
 
@@ -104,6 +103,12 @@
 
 		& > .grid-item {
 			background-color: white;
+		}
+	}
+
+	.card_text-container {
+		& > .card_text {
+			padding-right: 2em;
 		}
 	}
 }
