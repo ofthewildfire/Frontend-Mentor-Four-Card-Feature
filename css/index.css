@@ -22,11 +22,11 @@
   margin: 0 auto;
 }
 .main-heading .main-heading__title {
-  font-size: clamp(0.9375rem, 0.5625rem + 1.875vw, 2.25rem);
   color: #6f7177;
 }
 .main-heading .main-heading__title .title-text {
   font-family: "Poppins-200";
+  font-size: clamp(1.125rem, 0.8036rem + 1.6071vw, 2.25rem);
 }
 .main-heading .main-heading__title .title-text-bold {
   display: block;
