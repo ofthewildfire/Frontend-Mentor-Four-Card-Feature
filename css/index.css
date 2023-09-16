@@ -25,17 +25,17 @@
   color: #6f7177;
 }
 .main-heading .main-heading__title .title-text {
-  font-family: "Poppins-200";
+  font-family: "Poppins-200", sans-serif;
   font-size: clamp(1.3125rem, 0.9018rem + 2.0536vw, 2.75rem);
 }
 .main-heading .main-heading__title .title-text-bold {
   display: block;
-  font-family: "Poppins-600";
+  font-family: "Poppins-600", sans-serif;
   color: #4c4e61;
   padding: 0.25em 0;
 }
 .main-heading .main-heading__title .title-paragraph {
-  font-family: "Poppins-200";
+  font-family: "Poppins-200", sans-serif;
   padding: 1em 0;
   font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
   line-height: 1.5;
@@ -75,14 +75,14 @@
   line-height: 1.5;
 }
 .grid-container .grid-item .card_text-container > .card_title {
-  font-family: "Poppins-600";
+  font-family: "Poppins-600", sans-serif;
   color: #4c4e61;
   font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
   margin-bottom: 0.5em;
 }
 .grid-container .grid-item .card_text-container > .card_text {
   color: #6f7177;
-  font-family: "Poppins-200";
+  font-family: "Poppins-200", sans-serif;
   font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
 }
 .grid-container .karma {
@@ -133,7 +133,7 @@
 }
 
 body {
-  font-family: "Poppins-400";
+  font-family: "Poppins-400", sans-serif;
   max-width: 1440px;
   background-color: #fafafa;
   margin: 1em auto;
