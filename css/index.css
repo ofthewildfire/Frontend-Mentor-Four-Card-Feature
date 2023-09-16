@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Poppins-200";
+  font-family: "Poppins-200", sans-serif;
   font-weight: 200;
   font-display: swap;
   src: url(/assets/fonts/Poppins-ExtraLight.ttf);
 }
 @font-face {
-  font-family: "Poppins-400";
+  font-family: "Poppins-400", sans-serif;
   font-weight: 400;
   font-display: swap;
   src: url(/assets/fonts/Poppins-Regular.ttf);
 }
 @font-face {
-  font-family: "Poppins-600";
+  font-family: "Poppins-600", sans-serif;
   font-weight: 600;
   font-display: swap;
   src: url(/assets/fonts/Poppins-SemiBold.ttf);
