@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Poppins-200";
+  font-weight: 200;
+  font-display: swap;
+  src: url(/assets/fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Poppins-400";
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-600";
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/Poppins-SemiBold.ttf);
+}
+.main-heading {
+  padding: 1em 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+.main-heading .main-heading__title {
+  font-size: clamp(0.9375rem, 0.5625rem + 1.875vw, 2.25rem);
+  color: #6f7177;
+}
+.main-heading .main-heading__title .title-text {
+  font-family: "Poppins-200";
+}
+.main-heading .main-heading__title .title-text-bold {
+  display: block;
+  font-family: "Poppins-600";
+  color: #4c4e61;
+  padding: 0.25em 0;
+}
+.main-heading .main-heading__title .title-paragraph {
+  font-family: "Poppins-200";
+  font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+  padding: 1em 0;
+  line-height: 1.5;
+  max-width: 31.25rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 60rem) {
+  .main-heading {
+    padding: 1em 2em;
+    max-width: 100%;
+  }
+  .main-heading .title-paragraph {
+    padding: 1em 0;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 20px;
+  padding: 1em;
+}
+.grid-container .grid-item {
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px #4c4e61;
+  background-color: #fff;
+  display: grid;
+  gap: 50px;
+  padding: 1em 2em;
+}
+.grid-container .grid-item .card_img-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.grid-container .grid-item .card_text-container {
+  line-height: 1.5;
+}
+.grid-container .grid-item .card_text-container > .card_title {
+  font-family: "Poppins-600";
+  color: #4c4e61;
+  font-size: clamp(0.9375rem, 0.6339rem + 1.5179vw, 2rem);
+  margin-bottom: 0.5em;
+}
+.grid-container .grid-item .card_text-container > .card_text {
+  color: #6f7177;
+  font-family: "Poppins-200";
+  font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.grid-container .karma {
+  border-top: #fcaf4a 5px solid;
+}
+.grid-container .calculator {
+  border-top: #549ef2 5px solid;
+}
+.grid-container .supervisor {
+  border-top: #45d3d3 5px solid;
+}
+.grid-container .team-builder {
+  border-top: #ea5353 5px solid;
+}
+.grid-container > .center-wrapper {
+  display: grid;
+  gap: 20px;
+}
+
+@media screen and (min-width: 60rem) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .grid-container > .grid-item.supervisor, .grid-container > .grid-item.calculator {
+    align-self: center;
+  }
+  .center-wrapper {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .center-wrapper > .grid-item {
+    background-color: white;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins-400";
+  max-width: 1440px;
+  background-color: #fafafa;
+  margin: auto;
+}/*# sourceMappingURL=index.css.map */

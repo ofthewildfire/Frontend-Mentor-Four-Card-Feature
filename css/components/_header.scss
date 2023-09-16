@@ -1,0 +1,46 @@
+@use "../_partials/" as *;
+
+.main-heading {
+	// padding: $padding3;
+	padding: 1em 2em;
+	text-align: center;
+	margin: 0 auto;
+
+	.main-heading__title {
+		font-size: clamp(0.9375rem, 0.5625rem + 1.875vw, 2.25rem);
+		color: $Grayish-Blue;
+
+		.title-text {
+			font-family: $Font200;
+		}
+
+		.title-text-bold {
+			display: block;
+			font-family: $Font600;
+			color: $Very-Dark-Blue;
+			padding: $padding1;
+		}
+
+		.title-paragraph {
+			font-family: $Font200;
+			font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+			padding: $padding3;
+			line-height: 1.5;
+			max-width: 31.25rem;
+			// @!$%%% - this is a bad idea. but, sweet heck I just ...crashing rn will return to this.
+			margin: 0 auto;
+		}
+	}
+}
+
+// Grids
+
+@media screen and (min-width: 60rem) {
+	.main-heading {
+		padding: 1em 2em;
+		max-width: 100%;
+		.title-paragraph {
+			padding: $padding3;
+		}
+	}
+}

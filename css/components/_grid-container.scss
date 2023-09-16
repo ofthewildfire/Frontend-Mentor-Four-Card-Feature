@@ -1,0 +1,97 @@
+@use "../_partials/" as *;
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(auto-fit, 1fr);
+	gap: 20px;
+	padding: 1em;
+
+	.grid-item {
+		border-radius: 10px;
+		box-shadow: 0px 3px 5px $Very-Dark-Blue;
+		background-color: #fff;
+
+		// display
+
+		display: grid;
+		gap: 50px;
+		padding: 1em 2em;
+
+		.card_img-container {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+		.card_text-container {
+			line-height: 1.5;
+			& > .card_title {
+				font-family: $Font600;
+				color: $Very-Dark-Blue;
+				font-size: clamp(0.9375rem, 0.6339rem + 1.5179vw, 2rem);
+				margin-bottom: 0.5em;
+			}
+
+			& > .card_text {
+				color: $Grayish-Blue;
+				font-family: $Font200;
+				font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+				min-height: 3rem;
+
+				// It works better, but, is this good? Like, I feel like the "No height in CSS rule is being broken here, but now at least the lines might be more consist.
+				// revist. no ideas as of now.
+				// I dont remember when I wrote this.... and I dont remember what I was thinking, sigh, will return at a later date/or if someone has recs for changes.
+				display: flex;
+				align-items: center;
+
+				// I literally do not know why you have put that there ^ for what? why does it need this? .... o.o
+			}
+		}
+	}
+
+	.karma {
+		border-top: $Orange 5px solid;
+	}
+
+	.calculator {
+		border-top: $Blue 5px solid;
+	}
+
+	.supervisor {
+		border-top: $Cyan 5px solid;
+	}
+	.team-builder {
+		border-top: $Red 5px solid;
+	}
+
+	& > .center-wrapper {
+		display: grid;
+		gap: 20px;
+	}
+}
+
+// Media query
+@media screen and (min-width: 60rem) {
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+
+		& > .grid-item {
+			&.supervisor,
+			&.calculator {
+				align-self: center;
+			}
+		}
+	}
+	.center-wrapper {
+		display: grid;
+		grid-template-rows: repeat(auto-fit, 1fr);
+		grid-template-columns: 1fr;
+		gap: 25px;
+
+		& > .grid-item {
+			background-color: white;
+		}
+	}
+}
