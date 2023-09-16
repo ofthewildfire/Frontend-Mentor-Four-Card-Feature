@@ -23,3 +23,7 @@ $Font600: "Poppins-600";
 $padding1: 0.25em 0;
 $padding2: 0.5em 0;
 $padding3: 1em 0;
+
+// Font-sizing:
+
+$ParagraphFontSizing: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);

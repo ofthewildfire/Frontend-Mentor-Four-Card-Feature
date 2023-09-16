@@ -23,8 +23,9 @@
 
 		.title-paragraph {
 			font-family: $Font200;
-			font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+			// font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
 			padding: $padding3;
+			font-size: $ParagraphFontSizing;
 			line-height: 1.5;
 			max-width: 31.25rem;
 			// @!$%%% - this is a bad idea. but, sweet heck I just ...crashing rn will return to this.

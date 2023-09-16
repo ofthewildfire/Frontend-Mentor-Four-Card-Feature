@@ -22,6 +22,7 @@
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
+			// all the sanity in me.
 		}
 
 		.card_text-container {
@@ -29,27 +30,37 @@
 			& > .card_title {
 				font-family: $Font600;
 				color: $Very-Dark-Blue;
-				font-size: clamp(0.9375rem, 0.6339rem + 1.5179vw, 2rem);
+				// font-size: clamp(0.9375rem, 0.6339rem + 1.5179vw, 2rem);
+				// font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+				font-size: clamp(1.125rem, 1.0714rem + 0.2679vw, 1.3125rem);
 				margin-bottom: 0.5em;
 			}
 
 			& > .card_text {
 				color: $Grayish-Blue;
 				font-family: $Font200;
-				font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
-				min-height: 3rem;
+				// font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+				font-size: $ParagraphFontSizing;
+				// max-width: 30ch;
+				// min-height: 3rem;
+
+				// 16.9.23 - this is no good. I feel like this is causing the issue with the heights of the cards to be even worse. - removed, I dont need this, and I dont want it. if they change in height slightly its better than making it all rigid, and having unintended issues.
 
 				// It works better, but, is this good? Like, I feel like the "No height in CSS rule is being broken here, but now at least the lines might be more consist.
 				// revist. no ideas as of now.
 				// I dont remember when I wrote this.... and I dont remember what I was thinking, sigh, will return at a later date/or if someone has recs for changes.
-				display: flex;
-				align-items: center;
+				// display: flex;
+				// align-items: center;
 
 				// I literally do not know why you have put that there ^ for what? why does it need this? .... o.o
+				// k- removing this, really dont see its point, nothing needs to be centered, for what?
+
+				//lmao the hell is this gibberish???? i literally do not know anything about this and I freaking wrote it. sweetheart. try a meal and not cookies. might help with this.
 			}
 		}
 	}
 
+	// Individual card selectors adding border colors that are unique to each card.
 	.karma {
 		border-top: $Orange 5px solid;
 	}
@@ -65,13 +76,14 @@
 		border-top: $Red 5px solid;
 	}
 
+	// The two stacked cards that appear in the center on the desktop view.
 	& > .center-wrapper {
 		display: grid;
 		gap: 20px;
 	}
 }
 
-// Media query
+// Media query || Desktop
 @media screen and (min-width: 60rem) {
 	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
