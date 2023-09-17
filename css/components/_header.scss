@@ -1,7 +1,6 @@
 @use "../_partials/" as *;
 
 .main-heading {
-	// padding: $padding3;
 	padding: 0 2em;
 	text-align: center;
 	margin: 0 auto;
@@ -11,7 +10,6 @@
 
 		.title-text {
 			font-family: $Font200;
-			// font-size: clamp(1.5rem, 1.1429rem + 1.7857vw, 2.75rem);
 			font-size: clamp(1.3125rem, 0.9018rem + 2.0536vw, 2.75rem);
 		}
 
@@ -24,7 +22,6 @@
 
 		.title-paragraph {
 			font-family: $Font200;
-			// font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
 			padding: $padding3;
 			font-size: $ParagraphFontSizing;
 			line-height: 1.5;
@@ -39,7 +36,6 @@
 
 @media screen and (min-width: 60rem) {
 	.main-heading {
-		// padding: 1em 2em;
 		max-width: 100%;
 		.title-paragraph {
 			padding: $padding3;

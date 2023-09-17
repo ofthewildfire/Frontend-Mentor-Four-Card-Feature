@@ -36,23 +36,7 @@
 			& > .card_text {
 				color: $Grayish-Blue;
 				font-family: $Font200;
-				// font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
 				font-size: $ParagraphFontSizing;
-				// max-width: 30ch;
-				// min-height: 3rem;
-
-				// 16.9.23 - this is no good. I feel like this is causing the issue with the heights of the cards to be even worse. - removed, I dont need this, and I dont want it. if they change in height slightly its better than making it all rigid, and having unintended issues.
-
-				// It works better, but, is this good? Like, I feel like the "No height in CSS rule is being broken here, but now at least the lines might be more consist.
-				// revist. no ideas as of now.
-				// I dont remember when I wrote this.... and I dont remember what I was thinking, sigh, will return at a later date/or if someone has recs for changes.
-				// display: flex;
-				// align-items: center;
-
-				// I literally do not know why you have put that there ^ for what? why does it need this? .... o.o
-				// k- removing this, really dont see its point, nothing needs to be centered, for what?
-
-				//lmao the hell is this gibberish???? i literally do not know anything about this and I freaking wrote it. sweetheart. try a meal and not cookies. might help with this.
 			}
 		}
 	}
