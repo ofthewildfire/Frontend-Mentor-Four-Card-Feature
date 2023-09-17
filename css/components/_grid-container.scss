@@ -4,8 +4,8 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(auto-fit, 1fr);
-	gap: 20px;
-	padding: 0 1em;
+	gap: 25px;
+	padding: 1em 3em;
 
 	.grid-item {
 		border-radius: 10px;
@@ -61,7 +61,7 @@
 	// The two stacked cards that appear in the center on the desktop view.
 	& > .center-wrapper {
 		display: grid;
-		gap: 20px;
+		gap: 25px;
 	}
 }
 

@@ -55,8 +55,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fit, 1fr);
-  gap: 20px;
-  padding: 0 1em;
+  gap: 25px;
+  padding: 1em 3em;
 }
 .grid-container .grid-item {
   border-radius: 10px;
@@ -100,7 +100,7 @@
 }
 .grid-container > .center-wrapper {
   display: grid;
-  gap: 20px;
+  gap: 25px;
 }
 
 @media screen and (min-width: 60rem) {
